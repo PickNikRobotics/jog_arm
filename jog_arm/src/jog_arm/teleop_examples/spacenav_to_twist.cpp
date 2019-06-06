@@ -36,9 +36,9 @@ private:
     twist.twist.linear.y = msg->axes[1];
     twist.twist.linear.z = msg->axes[2];
 
-    twist.twist.angular.x = msg->axes[3];
-    twist.twist.angular.y = msg->axes[4];
-    twist.twist.angular.z = msg->axes[5];
+    twist.twist.angular.x = 0; //msg->axes[3];
+    twist.twist.angular.y = 0; //msg->axes[4];
+    twist.twist.angular.z = 0; //msg->axes[5];
 
     // Joint jogging with the buttons
     jog_msgs::JogJoint joint_deltas;
